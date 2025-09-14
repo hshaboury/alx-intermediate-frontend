@@ -1,0 +1,7 @@
+Steps I followed to install SASS:
+
+1. Checked Node installation: node -v
+2. Checked npm installation: npm -v
+3. Checked SASS installation: npx sass --version
+SASS was already installed successfully (version 1.92.1).
+
