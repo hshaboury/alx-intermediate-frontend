@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Added the custom media query per instructions */
+@media (max-width: 768px) 
+{ 
+main { grid-template-columns: 1fr; } 
+}
