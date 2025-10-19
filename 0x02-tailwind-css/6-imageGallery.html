@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4 bg-gray-50">
+    <header class="bg-blue-500 text-white p-4 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold">Grid and Flexbox Layout</h1>
+    </header>
+
+    <!-- Main grid layout -->
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+        <!-- Main content section spans 2 columns on large screens and uses flexbox -->
+        <section class="lg:col-span-2 flex gap-4">
+            <!-- Flexbox items with specified width, background, and padding -->
+            <div class="w-1/2 bg-red-200 p-4 rounded-lg shadow">Flexbox Item 1</div>
+            <div class="w-1/2 bg-red-400 p-4 rounded-lg shadow">Flexbox Item 2</div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="bg-green-200 p-4 rounded-lg shadow">
+            <h2 class="text-xl font-semibold mb-2">Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </aside>
+
+        <!-- Image Gallery Section -->
+        <section class="lg:col-span-3 mt-4 p-4 bg-white rounded-lg shadow">
+            <h2 class="text-2xl font-bold mb-4 text-center">Image Gallery</h2>
+            <!-- Responsive Grid for the gallery images -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Image 1 -->
+                <div>
+                    <img src="https://placehold.co/600x400/F87171/FFFFFF?text=Image+1" alt="Placeholder Image 1" class="w-full h-auto rounded-lg shadow-sm">
+                </div>
+                <!-- Image 2 -->
+                <div>
+                    <img src="https://placehold.co/600x400/60A5FA/FFFFFF?text=Image+2" alt="Placeholder Image 2" class="w-full h-auto rounded-lg shadow-sm">
+                </div>
+                <!-- Image 3 -->
+                <div>
+                    <img src="https://placehold.co/600x400/34D399/FFFFFF?text=Image+3" alt="Placeholder Image 3" class="w-full h-auto rounded-lg shadow-sm">
+                </div>
+                <!-- Image 4 -->
+                <div>
+                    <img src="https://placehold.co/600x400/FBBF24/FFFFFF?text=Image+4" alt="Placeholder Image 4" class="w-full h-auto rounded-lg shadow-sm">
+                </div>
+                <!-- Image 5 -->
+                <div>
+                    <img src="https://placehold.co/600x400/A78BFA/FFFFFF?text=Image+5" alt="Placeholder Image 5" class="w-full h-auto rounded-lg shadow-sm">
+                </div>
+                <!-- Image 6 -->
+                <div>
+                    <img src="https://placehold.co/600x400/EC4899/FFFFFF?text=Image+6" alt="Placeholder Image 6" class="w-full h-auto rounded-lg shadow-sm">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4 rounded-lg shadow-md">
+        <p class="text-center">&copy; 2025 Hosam's Blog</p>
+    </footer>
+</body>
+</html>
